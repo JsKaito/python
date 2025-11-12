@@ -1,6 +1,6 @@
 # Versión 1
 
-neg = pos = 0
+neg, pos = 0, 0
 num = -1
 
 while num != 0:
@@ -18,7 +18,7 @@ print("Números positivos:", pos, "\n"
 
 # Versión 2 (Más eficiente)
 
-neg = pos = 0
+neg, pos = 0, 0
 
 while True:
     num = int(input("Escribe un número entero: "))
