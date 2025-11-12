@@ -1,3 +1,2 @@
-l=5
-a=l**2
-print("El área es", a)
+for i in range (2, 201, 2):
+    print(i)
