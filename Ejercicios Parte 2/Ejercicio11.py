@@ -1,2 +1,3 @@
-for i in range (2, 201, 2):
-    print(i)
+altura = int(input("Introduce la altura de la escalera: "))
+for i in range(1, altura + 1):
+    print('*' * i)

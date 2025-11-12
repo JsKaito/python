@@ -1,3 +1,3 @@
-for i in range (1, 201):
-    if i % 2 == 0:
-        print(i)
+altura = int(input("Introduce la altura de la escalera: "))
+for i in range(1, altura + 1):
+    print(str(i) * i)

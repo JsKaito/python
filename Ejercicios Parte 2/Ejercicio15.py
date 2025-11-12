@@ -1,3 +1,4 @@
-n1 = int(input("Escribe el primer número: "))
-n2 = int(input("Escribe el segundo número: "))
-print("El mayor es", n1 if n1 >= n2 else n2)
+altura = int(input("Introduce la altura de la pirámide: "))
+for i in range(1, altura + 1):
+    #print(" "*i,"*" * i," "*i)
+    print((i)*" ", ((altura-i)*2-1)*"*")

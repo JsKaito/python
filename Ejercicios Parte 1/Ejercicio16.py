@@ -1,2 +1,7 @@
-n1 = int(input("Escribe un número: "))
-print("El número es positivo." if n1 >= 0 else "El número es negativo.")
+while True:
+    numero = int(input("Escribe un número entre 0 y 99999: "))
+    if 0 <= numero <= 99999:
+        break
+    
+    print("Número inválido. Inténtalo de nuevo.")
+print(f"El número tiene {len(str(numero))} cifras.")

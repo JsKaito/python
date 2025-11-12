@@ -1,6 +1,5 @@
-n1 = int(input("Escribe el primer número: "))
-n2 = int(input("Escribe el segundo número: "))
-if n1 != n2:
-    print ("El número mayor es", max(n1, n2))
-else:
-    print ("Los números son iguales.")
+num = int(input("Introduce el número a elevar: "))
+exponente = int(input("Introduce el exponente: "))
+for i in range (exponente - 1):
+    num *= num
+print("El resultado es", num)
