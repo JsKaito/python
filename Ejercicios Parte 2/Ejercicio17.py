@@ -6,4 +6,4 @@ for i in range (100, 201):
     elif i % 2 != 0:
         impares += i
     
-print("La suma de los pares es", pares, "\n" "La suma de los impares es", impares)
+print("La suma de los pares es", pares, "\nLa suma de los impares es", impares)

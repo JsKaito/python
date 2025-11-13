@@ -1,7 +1,38 @@
-fact = 1
-n = int(input("Escribe un número positivo: "))
-
-for i in range(1, n+1):
-    fact *= i
+b500, b200, b100, b50, b20, b10, b5 = 0, 0, 0, 0, 0, 0, 0
+n = int(input("Introduce una cantidad en euros múltiplo de 5: "))
+while True:
+    if n % 5 !=0 or n < 0:
+        n = int(input("Error. Introduce una cantidad en euros múltiplo de 5: "))
+        
+    elif n >= 500:
+        b500 += 1
+        n -= 500
+    elif n >= 200:
+        b200 += 1
+        n -= 200
+    elif n >= 100:
+        b100 += 1
+        n -= 100
+    elif n >= 50:
+        b50 += 1
+        n -= 50
+    elif n >= 20:
+        b20 += 1
+        n -= 20
+    elif n >= 10:
+        b10 += 1
+        n -= 10
+    elif n >= 5:
+        b5 += 1
+        n -= 5
+    elif n == 0:
+        break
     
-print("El factorial es", fact)
+print("Cantidad de billetes")
+print("Billetes de 500: ", b500)
+print("Billetes de 200: ", b200)
+print("Billetes de 100: ", b100)
+print("Billetes de 50: ", b50)
+print("Billetes de 20: ", b20)
+print("Billetes de 10: ", b10)
+print("Billetes de 5: ", b5)

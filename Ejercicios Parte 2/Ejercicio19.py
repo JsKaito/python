@@ -1,14 +1,26 @@
-n1 = int(input("Escribe el primer número: "))
-n2 = int(input("Escribe el segundo número: "))
-n3 = int(input("Escribe el tercer número: "))
+limiteInferior, limiteSuperior = 1, 100
+intentos = 0
 
-if n1 == n2 == n3:
-    print("Los tres números son iguales.")
-elif n1 == n2:
-    print("El número 1 y el número 2 son iguales. El número mayor es", max(n1, n3), "y el menor es", min(n1, n3))
-elif n1 == n3:
-    print("El número 1 y el número 3 son iguales. El número mayor es", max(n1, n2), "y el menor es", min(n1, n2))
-elif n2 == n3:
-    print("El número 2 y el número 3 son iguales. El número mayor es", max(n2, n1), "y el menor es", min(n2, n1))
-else:
-    print("El número mayor es", max(n1, n2, n3), "y el menor es", min(n1, n2, n3))
+print(f"\nPiensa un número entre {limiteInferior} y {limiteSuperior}.")
+print("Introduce '0' si acierto, '1' si tu número es menor o '2' si es mayor.")
+
+while True:
+    guess = (limiteInferior + limiteSuperior) // 2
+    
+    print ("\n[0] Acierto | [1] Menor | [2] Mayor")
+    opc = int(input(f"¿Tu número es {guess}? "))
+    intentos += 1
+
+    if opc == 0: # Si es acierto
+        break
+    
+    elif opc == 1: # Si es menor
+        limiteSuperior = guess - 1
+        
+    elif opc == 2: # Si es mayor
+        limiteInferior = guess + 1
+        
+    else: # Si no es válido
+        print("Opción no válida.")
+
+print(f"He adivinado el número en {intentos} intentos.")
