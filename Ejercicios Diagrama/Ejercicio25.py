@@ -14,4 +14,3 @@ elif nota < 9:
     print("Notable")
 elif nota <= 10:
     print("Sobresaliente")
-    
