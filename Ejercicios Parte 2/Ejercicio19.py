@@ -1,7 +1,7 @@
 limiteInferior, limiteSuperior = 1, 100
 intentos = 0
 
-print(f"\nPiensa un número entre {limiteInferior} y {limiteSuperior}.")
+print(f"\nPiensa un número entero entre {limiteInferior} y {limiteSuperior}.")
 print("Introduce '0' si acierto, '1' si tu número es menor o '2' si es mayor.")
 
 while True:

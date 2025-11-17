@@ -1,9 +1,9 @@
-import math
+from math import pi
 
-r = int(input("Ingrese el radio: "))
-l = 2 * math.pi * r
-a = math.pi * r**2
-vol = (4/3) * math.pi * r**3
-print("La longitud de la circunferencia es", l, "\n"
-      "El área del círculo es", a, "\n"
-      "El volumen de la esfera es", vol)
+r = float(input("Ingrese el radio: "))
+l = 2 * pi * r
+a = pi * r**2
+vol = (4/3) * pi * r**3
+print(f"La longitud de la circunferencia es {l} \n"
+      f"El área del círculo es {a} \n"
+      f"El volumen de la esfera es {vol}")

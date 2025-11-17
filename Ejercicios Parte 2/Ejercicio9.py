@@ -1,7 +1,7 @@
 neg, pos = 0, 0
 
 while True:
-    num = int(input("Escribe un número entero: "))
+    num = float(input("Escribe un número: "))
         
     if num < 0:
         neg +=1

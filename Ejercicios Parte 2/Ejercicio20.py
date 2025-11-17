@@ -1,10 +1,19 @@
 b500, b200, b100, b50, b20, b10, b5 = 0, 0, 0, 0, 0, 0, 0
-n = int(input("Introduce una cantidad en euros múltiplo de 5: "))
+
 while True:
-    if n % 5 !=0 or n < 0:
-        n = int(input("Error. Introduce una cantidad en euros múltiplo de 5: "))
+    try:
         
-    elif n >= 500:
+        n = int(input("Introduce una cantidad en euros múltiplo de 5: "))
+        if n % 5 != 0 or n < 0:
+            print("Error. La cantidad debe ser positiva y múltiplo de 5.")
+            continue
+        break
+    
+    except ValueError:
+        print("Error. Debes introducir un número entero.")
+
+while True:
+    if n >= 500:
         b500 += 1
         n -= 500
     elif n >= 200:

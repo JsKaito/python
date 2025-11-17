@@ -1,5 +1,5 @@
 horas = int(input("Escribe las horas trabajadas: "))
-tarifa = int(input("Escribe la tarifa: "))
+tarifa = float(input("Escribe la tarifa: "))
 
 
 def calcularSalario(horas, tarifa):

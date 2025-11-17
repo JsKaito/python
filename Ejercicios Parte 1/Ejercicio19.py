@@ -20,7 +20,7 @@ while True:
     print()
     
     if num == 1: # Depositar
-        cantidad = int(input("Introduce la cantidad a depositar: "))
+        cantidad = float(input("Introduce la cantidad a depositar: "))
         if efectivo < cantidad:
             print("No tienes dinero en efectivo suficiente.")
         else:
@@ -29,7 +29,7 @@ while True:
             print("Depósito realizado.")
     
     elif num == 2: # Retirar
-        cantidad = int(input("Introduce la cantidad a retirar: "))
+        cantidad = float(input("Introduce la cantidad a retirar: "))
         if cantidad < banco:
             print("No tienes dinero suficiente en tu cuenta.")
         else:

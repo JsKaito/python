@@ -29,7 +29,6 @@ calcResultado(dados)
 print(calcResultado(dados),"Tus resultados han sido:", dados)
 
 
-
 '''
 Función para testear si la lógica es correcta que he usado para testear (Mira cuantas tiradas tarda en sacar triple 6):
 

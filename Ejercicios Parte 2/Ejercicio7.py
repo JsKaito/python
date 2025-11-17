@@ -2,7 +2,7 @@
 
 iteraciones = 0
 while iteraciones < 100:
-    num = int(input("Escribe un número entero"))
+    num = float(input("Escribe un número: "))
     
     if num != 0:
         iteraciones += 1
@@ -17,7 +17,7 @@ print("Se ha introducido un número negativo.") if flag else print("No se ha int
 
 iteraciones = 0
 while iteraciones < 100:
-    num = int(input("Escribe un número entero"))
+    num = float(input("Escribe un número: "))
     
     if num != 0:
         iteraciones += 1

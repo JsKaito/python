@@ -1,4 +1,4 @@
-pr = int(input("Ingrese el precio real del producto: "))
-po = int(input("Ingrese el precio de oferta del producto: "))
+pr = float(input("Ingrese el precio real del producto: "))
+po = float(input("Ingrese el precio de oferta del producto: "))
 desc= 100*((pr-po)/pr)
-print("El descuento es de", desc,"%")
+print(f"El descuento es de {desc} %")

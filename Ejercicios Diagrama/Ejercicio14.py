@@ -13,10 +13,10 @@ def dividir(n1, n2):
     else:
         return "No se puede dividir entre 0."
 
-n1 = int(input("Ingrese el primer número: "))
-n2 = int(input("Ingrese el segundo número: "))
+n1 = float(input("Ingrese el primer número: "))
+n2 = float(input("Ingrese el segundo número: "))
 
-print("Suma:", sumar(n1, n2), "\n"
-      "Resta:", restar(n1, n2), "\n"
-      "Multiplicación:", multiplicar(n1, n2), "\n"
-      "División:", dividir(n1, n2))
+print(f"Suma: {sumar(n1, n2)} \n",
+      f"Resta: {restar(n1, n2)} \n",
+      f"Multiplicación: {multiplicar(n1, n2)} \n",
+      f"División: {dividir(n1, n2)}")

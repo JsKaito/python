@@ -4,7 +4,7 @@ while True:
     print("\n¿Cómo desea pagar?",
           "\n1. Tarjeta (3% de recargo)",
           "\n2. Efectivo (5% de descuento)")
-    opc = float(input("\nElige una opción: "))
+    opc = int(input("\nElige una opción: "))
     
     if opc == 1:
         tarjeta = True

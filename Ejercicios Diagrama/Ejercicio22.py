@@ -1,6 +1,6 @@
 neg = pos = iteraciones = 0
-while iteraciones < 2:
-    num = int(input("Escribe un número entero: "))
+while iteraciones < 100:
+    num = float(input("Escribe un número entero: "))
     
     if num != 0:
         iteraciones += 1

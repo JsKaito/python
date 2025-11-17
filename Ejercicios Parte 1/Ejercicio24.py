@@ -22,7 +22,7 @@ while True:
     
     print("El día debe estar entre 1 y 7.")
 
-if dia == 2 or dia == 4:
+if dia in [2, 4]: # Si es martes o jueves
     descuento = 15
 
 precio -= precio * (descuento / 100)

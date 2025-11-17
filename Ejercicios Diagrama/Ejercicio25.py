@@ -1,7 +1,9 @@
-nota = int(input("Escribe tu nota: "))
-while nota < 0 or nota > 10:
-    nota = int(print("Error: La nota debe estar entre 0 y 10. Inténtalo otra vez: "))
-    
+while True:
+    nota = float(input("Escribe tu nota: "))
+    if 0 <= nota <= 10:
+        break
+    print("Error: La nota debe estar entre 0 y 10. Inténtalo otra vez.")
+
 if nota < 3:
     print("Muy Deficiente")
 elif nota < 5:
